@@ -1,0 +1,14 @@
+syntax = "proto3";
+package pb;
+
+import "code.proto";
+
+message TokenAuthReq {
+    string token = 1;
+}
+
+message TokenAuthResp {
+    ErrCode Code   = 1;
+    uint64 UserID  = 2;
+    uint32 SeverID = 3;
+}
